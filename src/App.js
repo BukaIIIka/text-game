@@ -48,7 +48,7 @@ function App() {
         <p><b>weatherData</b>: {JSON.stringify(weatherData) || 'fetching weather error'}</p>
         <p><b>currentTime</b>: {currentTime}</p>
         <p><b>language</b>: {language?.toString()}</p>
-        <p><b>contacts</b>: {contacts?.toString() || `doesn't allow`}</p>
+        <p><b>contacts</b>: {JSON.stringify(contacts) || `doesn't allow`}</p>
         <p><b>isMobileDevice</b>: {isMobileDevice?.toString()}</p>
         <p><b>devicePlatform</b>: {devicePlatform?.toString()}</p>
         <p><b>isVibrated</b>: {isVibrated.toString()}</p>
