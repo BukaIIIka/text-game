@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
   async function onGetCurrentGeolocationSuccess(pos) {
     const crd = pos.coords;
     const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${crd.latitude}&longitude=${crd.longitude}&current_weather=true`);
-    const weatherData = await response.json();
+    weatherData = await response.json();
   }
 
   function onGetCurrentGeolocationError(err) {
